@@ -79,14 +79,14 @@ public:
 		Data ret(*this);
 		ret._day -= day;
 		while (ret._day < 0)
-		{
-			ret._day += GetMonthDay(ret._year, ret._month);
+		{	
 			ret._month--;
 			if (ret._month == 0)
 			{
 				ret._month = 12;
 				ret._year--;
 			}
+			ret._day += GetMonthDay(ret._year, ret._month);
 		}
 		return ret;
 	}
@@ -111,13 +111,13 @@ public:
 		/*_day -= day;
 		while (_day < 0)
 		{
-			_day += GetMonthDay(_year, _month);
 			_month--;
 			if (_month == 0)
 			{
 				_year--;
 				_month = 12;
 			}
+			_day += GetMonthDay(_year, _month);
 		}*/
 		*this = *this - day;
 		return *this;

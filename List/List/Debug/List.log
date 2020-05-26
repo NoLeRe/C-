@@ -1,0 +1,40 @@
+﻿生成启动时间为 2020/5/26 14:26:12。
+     1>项目“C:\Users\machenike\Desktop\List\List\List.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt test.cpp
+         test.cpp
+     1>c:\users\machenike\desktop\list\list\list.h(35): error C2976: “My_std::list_iterator”: 模板 参数太少
+                 c:\users\machenike\desktop\list\list\list.h(20) : 参见“My_std::list_iterator”的声明
+                 c:\users\machenike\desktop\list\list\list.h(65): 参见对正在编译的类 模板 实例化“My_std::list_iterator<T,ref,ptr>”的引用
+     1>c:\users\machenike\desktop\list\list\list.h(39): error C2976: “My_std::list_iterator”: 模板 参数太少
+                 c:\users\machenike\desktop\list\list\list.h(20) : 参见“My_std::list_iterator”的声明
+     1>c:\users\machenike\desktop\list\list\list.h(78): error C2061: 语法错误: 标识符“cosnt”
+                 c:\users\machenike\desktop\list\list\list.h(190): 参见对正在编译的类 模板 实例化“My_std::list<T>”的引用
+     1>c:\users\machenike\desktop\list\list\list.h(78): error C2535: “My_std::list<T>::list(void)”: 已经定义或声明成员函数
+                 c:\users\machenike\desktop\list\list\list.h(72) : 参见“My_std::list<T>::list”的声明
+     1>c:\users\machenike\desktop\list\list\list.h(78): error C2535: “My_std::list<int>::list(void)”: 已经定义或声明成员函数
+                 c:\users\machenike\desktop\list\list\list.h(72) : 参见“My_std::list<int>::list”的声明
+     1>c:\users\machenike\desktop\list\list\list.h(201): error C2664: “void My_std::list<int>::insert(std::iterator,const T &)”: 无法将参数 1 从“std::iterator”转换为“std::iterator”
+                 with
+                 [
+                     T=int
+                 ]
+                 目标类型无构造函数
+     1>c:\users\machenike\desktop\list\list\list.h(202): error C2664: “std::iterator My_std::list<int>::erase(std::iterator)”: 无法将参数 1 从“std::iterator”转换为“std::iterator”
+                 目标类型无构造函数
+     1>c:\users\machenike\desktop\list\list\list.h(204): error C2039: “iterator”: 不是“My_std::list<int>”的成员
+     1>c:\users\machenike\desktop\list\list\list.h(204): error C2514: “std::iterator”: 类没有构造函数
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(338) : 参见“std::iterator”的声明
+     1>c:\users\machenike\desktop\list\list\list.h(205): error C2678: 二进制“!=”: 没有找到接受“std::iterator”类型的左操作数的运算符(或没有可接受的转换)
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\system_error(426): 可能是“bool std::operator !=(const std::error_condition &,const std::error_code &) throw()”
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\system_error(419): 或       “bool std::operator !=(const std::error_code &,const std::error_condition &) throw()”
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\exception(522): 或       “bool std::operator !=(const std::exception_ptr &,std::nullptr_t)”
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\exception(517): 或       “bool std::operator !=(std::nullptr_t,const std::exception_ptr &)”
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\exception(512): 或       “bool std::operator !=(const std::exception_ptr &,const std::exception_ptr &)”
+                 尝试匹配参数列表“(std::iterator, std::iterator)”时
+     1>c:\users\machenike\desktop\list\list\list.h(205): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+     1>已完成生成项目“C:\Users\machenike\Desktop\List\List\List.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:01.67

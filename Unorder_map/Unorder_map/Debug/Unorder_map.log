@@ -1,0 +1,90 @@
+﻿生成启动时间为 2020/6/18 11:25:44。
+     1>项目“C:\Users\machenike\Desktop\Unorder_map\Unorder_map\Unorder_map.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Unorder_map.cpp
+         Unorder_map.cpp
+     1>c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(174): warning C4018: “<”: 有符号/无符号不匹配
+                 c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(165): 编译类 模板 成员函数“Hash_iterator<K,V,Keyofval,Hashfun> &Hash_iterator<K,V,Keyofval,Hashfun>::operator ++(void)”时
+                 with
+                 [
+                     K=int
+         ,            V=std::pair<int,int>
+         ,            Keyofval=my_unordermap<int,int,HashFun<int>>::mapofval
+         ,            Hashfun=HashFun<int>
+                 ]
+                 c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(450): 参见对正在编译的函数 模板 实例化“Hash_iterator<K,V,Keyofval,Hashfun> &Hash_iterator<K,V,Keyofval,Hashfun>::operator ++(void)”的引用
+                 with
+                 [
+                     K=int
+         ,            V=std::pair<int,int>
+         ,            Keyofval=my_unordermap<int,int,HashFun<int>>::mapofval
+         ,            Hashfun=HashFun<int>
+                 ]
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\utility(198): 参见对正在编译的类 模板 实例化“Hash_iterator<K,V,Keyofval,Hashfun>”的引用
+                 with
+                 [
+                     K=int
+         ,            V=std::pair<int,int>
+         ,            Keyofval=my_unordermap<int,int,HashFun<int>>::mapofval
+         ,            Hashfun=HashFun<int>
+                 ]
+                 c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(435): 参见对正在编译的类 模板 实例化“std::pair<Hash_iterator<K,V,Keyofval,Hashfun>,bool>”的引用
+                 with
+                 [
+                     K=int
+         ,            V=std::pair<int,int>
+         ,            Keyofval=my_unordermap<int,int,HashFun<int>>::mapofval
+         ,            Hashfun=HashFun<int>
+                 ]
+     1>c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(203): warning C4018: “<”: 有符号/无符号不匹配
+                 c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(202): 编译类 模板 成员函数“Hash_iterator<K,V,Keyofval,Hashfun> Hash_Bucket<K,V,Keyofval,Hashfun>::begin(void)”时
+                 with
+                 [
+                     K=int
+         ,            V=std::pair<int,int>
+         ,            Keyofval=my_unordermap<int,int,HashFun<int>>::mapofval
+         ,            Hashfun=HashFun<int>
+                 ]
+                 c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(351): 参见对正在编译的函数 模板 实例化“Hash_iterator<K,V,Keyofval,Hashfun> Hash_Bucket<K,V,Keyofval,Hashfun>::begin(void)”的引用
+                 with
+                 [
+                     K=int
+         ,            V=std::pair<int,int>
+         ,            Keyofval=my_unordermap<int,int,HashFun<int>>::mapofval
+         ,            Hashfun=HashFun<int>
+                 ]
+                 c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(348): 参见对正在编译的类 模板 实例化“Hash_Bucket<K,std::pair<K,V>,my_unordermap<K,V,HashFun<K>>::mapofval,Hashfun>”的引用
+                 with
+                 [
+                     K=int
+         ,            V=int
+         ,            Hashfun=HashFun<int>
+                 ]
+                 c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(434): 参见对正在编译的类 模板 实例化“my_unordermap<int,int,HashFun<K>>”的引用
+                 with
+                 [
+                     K=int
+                 ]
+     1>c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(243): warning C4018: “<”: 有符号/无符号不匹配
+                 c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(235): 编译类 模板 成员函数“void Hash_Bucket<K,std::pair<K,V>,my_unordermap<K,V,HashFun<K>>::mapofval,Hashfun>::Checkcpacity(void)”时
+                 with
+                 [
+                     K=int
+         ,            V=int
+         ,            Hashfun=HashFun<int>
+                 ]
+                 c:\users\machenike\desktop\unorder_map\unorder_map\unorder_map.cpp(216): 参见对正在编译的函数 模板 实例化“void Hash_Bucket<K,std::pair<K,V>,my_unordermap<K,V,HashFun<K>>::mapofval,Hashfun>::Checkcpacity(void)”的引用
+                 with
+                 [
+                     K=int
+         ,            V=int
+         ,            Hashfun=HashFun<int>
+                 ]
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\machenike\Desktop\Unorder_map\Debug\Unorder_map.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\machenike\Desktop\Unorder_map\Debug\Unorder_map.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\machenike\Desktop\Unorder_map\Debug\Unorder_map.lib" /MACHINE:X86 Debug\Unorder_map.obj
+         Unorder_map.vcxproj -> C:\Users\machenike\Desktop\Unorder_map\Debug\Unorder_map.exe
+     1>已完成生成项目“C:\Users\machenike\Desktop\Unorder_map\Unorder_map\Unorder_map.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.26
